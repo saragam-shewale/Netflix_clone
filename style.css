@@ -92,7 +92,7 @@ body {
     
     color: white;
 }
-/*sargam*/
+/*saragam*/
 body {
     background-color: black;
     color: white;
@@ -102,12 +102,12 @@ body {
     unicode-bidi: bidi-override;
     padding-left: 150px;
     transition: o.3s ease;/* smooth animation */
+    float: left;
 }
 .img_div:hover{
     transform: scale(1.1); /* increase size by 20% */
     padding-left: 150px;
 }
-
 
 .content {
     width: 100%;
@@ -209,5 +209,4 @@ body {
 .get-started:hover {
     background-color: #f40612;
 }
-
 
