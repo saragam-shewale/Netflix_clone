@@ -39,33 +39,107 @@
     </div>
     <!--    saragam -->
     <img src="images/half_circle.png" alt="half circle" width="100%" height="100px">
-    <h2 class="trending_now">Trending Now</h2><br>
-    <div class="img_div">
-        <img src="images/operation_safed_sagar.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;  
-    
-    <div class="img_div">
-        <img src="images/alpha.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp; 
-    
-    <div class="img_div">
-        <img src="images/cocktail.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;
-    
-    <div class="img_div">
-        <img src="images/korean_kanakaran.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;
-    
-    <div class="img_div">
-        <img src="images/dhamaal.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;
-    
-    <div class="img_div">
-        <img src="images/musafir_cafe.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;
-    
-    <div class="img_div">
-        <img src="images/gandhari.jpg" style="border-radius: 7px;">
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <section class="trending_class">
+            <h2 class="trending_now">Trending Now</h2><br>
+              <div class="slider-container">
+            <button class="slider-btn left-btn" onclick="slideleft()" height="100px" width="100px">&#10094;</button>
+        <div class="movie-slider" id="movieSlider">    
+        <div class="img_div">
+                <img src="images/operation_safed_sagar.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;  
+
+            <div class="img_div">
+                <img src="images/alpha.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp; 
+
+            <div class="img_div">
+                <img src="images/cocktail.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="img_div">
+                <img src="images/korean_kanakaran.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="img_div">
+                <img src="images/dhamaal.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="img_div">
+                <img src="images/musafir_cafe.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="img_div">
+                <img src="images/gandhari.jpg" style="border-radius: 7px;">
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="slider-btn right-btn" onclick="slideright()" height="100px" width="100px">&#10095;</button>
+        </div>
+    </section> -->
+    <section class="trending-section">
+
+        <h2>Trending Now</h2>
+
+        <div class="slider-container">
+
+            <!-- Left Button -->
+            <button class="slider-btn left-btn" onclick="slideLeft()" id="leftBtn">
+                &#10094;
+            </button>
+
+            <!-- Movie List -->
+            <div class="movie-slider" id="movieSlider">
+
+                <!-- Movie 1 -->
+                <div class="movie-card">
+                    <span class="rank">1</span>
+                    <img src="images/alpha.jpg" alt="Movie 1">
+                </div>
+
+                <!-- Movie 2 -->
+                <div class="movie-card">
+                    <span class="rank">2</span>
+                    <img src="images/cocktail.jpg" alt="Movie 2">
+                </div>
+
+                <!-- Movie 3 -->
+                <div class="movie-card">
+                    <span class="rank">3</span>
+                    <img src="images/gandhari.jpg" alt="Movie 3">
+                </div>
+
+                <!-- Movie 4 -->
+                <div class="movie-card">
+                    <span class="rank">4</span>
+                    <img src="images/korean_kanakaran.jpg" alt="Movie 4">
+                </div>
+
+                <!-- Movie 5 -->
+                <div class="movie-card">
+                    <span class="rank">5</span>
+                    <img src="images/musafir_cafe.jpg" alt="Movie 5">
+                </div>
+
+                <!-- Movie 6 -->
+                <div class="movie-card">
+                    <span class="rank">6</span>
+                    <img src="images/operation_safed_sagar.jpg" alt="Movie 6">
+                </div>
+                
+                <!-- Movie 6 -->
+                <div class="movie-card">
+                    <span class="rank">7</span>
+                    <img src="images/peddi.jpg" alt="Movie 6">
+                </div>
+
+            </div>
+
+            <!-- Right Button -->
+            <button class="slider-btn right-btn" onclick="slideRight()" id="rightBtn">
+                &#10095;
+            </button>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
