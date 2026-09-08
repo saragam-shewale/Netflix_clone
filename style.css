@@ -93,6 +93,33 @@ body {
     color: white;
 }
 /*saragam*/
+
+.div1{
+    position: relative;
+
+    width: 210px;
+    height: 320px;
+
+    border-radius: 10px;
+
+    overflow: visible;
+
+    flex-shrink: 0;
+    float: left;
+}
+.div2{
+    position: relative;
+
+    width: 100px;
+    height: 320px;
+
+    border-radius: 10px;
+
+    overflow: visible;
+
+    flex-shrink: 0;
+    float: right;
+}
 body {
     background-color: black;
     color: white;
@@ -129,7 +156,10 @@ body {
     font-size: 28px;
     margin-bottom: 30px;
 }
-
+.more_section{
+    margin-left: 30px;
+    font-size: 28px;
+}
 
 /* Slider */
 
@@ -385,3 +415,4 @@ body {
 .get-started:hover {
     background-color: #f40612;
 }
+
