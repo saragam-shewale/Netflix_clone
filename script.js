@@ -1,21 +1,12 @@
-// ===============================
-// GET HTML ELEMENTS
-// ===============================
-
 const movieSlider = document.getElementById("movieSlider");
 
 const leftBtn = document.getElementById("leftBtn");
 
 const rightBtn = document.getElementById("rightBtn");
-
-
 // ===============================
 // SLIDE AMOUNT
 // ===============================
-
-const slideAmount = 600;
-
-
+const slideAmount = 1400;
 // ===============================
 // RIGHT BUTTON
 // ===============================
