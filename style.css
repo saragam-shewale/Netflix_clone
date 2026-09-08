@@ -175,26 +175,18 @@ body {
 }
 .movie-card {
     position: relative;
-
     min-width: 225px;
     height: 320px;
-
     border-radius: 10px;
-
     overflow: visible;
-
     flex-shrink: 0;
 }
 .movie-card img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 10px;
-
     display: block;
-
     transition: transform 0.3s ease;
 }
 .movie-card:hover img {
@@ -307,7 +299,7 @@ body {
 .div1 {
     display: inline-block;
     vertical-align: top;
-    width: 20%;
+    width: 23.6%;
     height: 300px;
     margin-right: 1.5%;
     padding: 30px 20px;
@@ -381,7 +373,7 @@ body {
 .que{
     background-color: #333333;
     height: 90px;
-    width: 80%;
+    width: 96.5%;
     padding-bottom: 0px;
     padding-left: 40px;
     padding-top: 30px;
