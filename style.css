@@ -49,6 +49,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     color: white;
+    margin-top:27px;
 }
 .select option{
     background-color: white;
