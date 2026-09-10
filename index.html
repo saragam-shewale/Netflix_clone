@@ -33,7 +33,7 @@
             </div>
     </div>
     <!--    saragam -->
-    <img src="images/half_circle.png" alt="half circle" width="100%" height="100px">
+    <img src="images/half_circle.png" alt="half circle" width="102%" height="100px">
     <section class="trending-section">
         <h2>Trending Now</h2>
         <div class="slider-container">
@@ -41,43 +41,43 @@
                 &#10094;
             </button>
             <div class="movie-slider" id="movieSlider">
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('alpha')">
                     <span class="rank">1</span>
                     <img src="images/alpha.jpg" alt="Movie 1">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('cocktail')">
                     <span class="rank">2</span>
                     <img src="images/cocktail.jpg" alt="Movie 2">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('gandhari')">
                     <span class="rank">3</span>
                     <img src="images/gandhari.jpg" alt="Movie 3">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('korean_kanakaran')">
                     <span class="rank">4</span>
                     <img src="images/korean_kanakaran.jpg" alt="Movie 4">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('musafir_cafe')">
                     <span class="rank">5</span>
                     <img src="images/musafir_cafe.jpg" alt="Movie 5">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('operation_safed_sagar')">
                     <span class="rank">6</span>
                     <img src="images/operation_safed_sagar.jpg" alt="Movie 6">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('peddi')">
                     <span class="rank">7</span>
                     <img src="images/peddi.jpg" alt="Movie 6">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('gatta_khushi')">
                     <span class="rank">8</span>
                     <img src="images/gatta_khushi.jpg" alt="Movie 6">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('dhamaal')">
                     <span class="rank">9</span>
                     <img src="images/dhamaal.jpg" alt="Movie 6">
                 </div>
-                <div class="movie-card">
+                <div class="movie-card" onclick="openMovie('mirzapur')">
                     <span class="rank">10</span>
                     <img src="images/mirzapur.jpg" alt="Movie 6">
                 </div>
@@ -86,6 +86,38 @@
                 &#10095;
             </button>
         </div>
+        
+        <!-- MOVIE POPUP -->
+
+<div id="movieModal" class="movie-modal">
+    <div class="movie-popup">
+        <!-- Close Button -->
+        <button class="close-btn" onclick="closeMovie()">×</button>
+        <!-- Movie Image -->
+        <img id="modalImage" src="" alt="Movie">
+        <div class="movie-info">
+            <h1 id="modalTitle">Movie Title</h1>
+            <div class="movie-tags">
+                <span id="modalYear">2026</span>
+                <span>U/A 13+</span>
+                <span>Movie</span>
+                <span>Action</span>
+                <span>Drama</span>
+            </div>
+
+            <p id="modalDescription">
+                Movie description goes here.
+            </p>
+
+            <button class="modal-start">
+                Get Started ❯
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
     </section>
     <section class="reasons-section">
         <h2 class="more_reason">More reasons to join</h2>
@@ -123,15 +155,143 @@
                 </div>
         </div>
     </section>
-    <section id="question">
-        <h2>Frequently Asked Questions</h2><br>
-        <div class="que">What is Netflix?</div><br>
-        <div class="que">How much does Netflix cost?</div><br>
-        <div class="que">Where can I watch?</div><br>
-        <div class="que">How do I cancel?</div><br>
-        <div class="que">What can I watch on Netflix?</div><br>
-        <div class="que">Is Netflix good for kids?</div><br>
-    </section>
+    <!-- FAQ SECTION -->
+<section id="question">
+
+    <h2>Frequently Asked Questions</h2>
+    <br>
+
+    <!-- Question 1 -->
+    <div class="item">
+
+        <div class="que">
+            <span>What is Netflix?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                Netflix is a streaming service that offers a wide variety
+                of award-winning TV shows, movies, anime, documentaries
+                and more – on thousands of internet-connected devices.
+            </p>
+
+            <p>
+                You can watch as much as you want, whenever you want,
+                without a single ad – all for one low monthly price.
+                There's always something new to discover, and new TV
+                shows and movies are added every week!
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Question 2 -->
+    <div class="item">
+
+        <div class="que">
+            <span>How much does Netflix cost?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                Watch Netflix on your smartphone, tablet, Smart TV,
+                laptop, or streaming device, all for one fixed monthly
+                fee. Plans range from ₹149 to ₹649/month.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Question 3 -->
+    <div class="item">
+
+        <div class="que">
+            <span>Where can I watch?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                Watch anywhere, anytime. Sign in with your Netflix account
+                to watch instantly on the web or on any internet-connected
+                device that offers the Netflix app.
+            </p>
+
+            <p>
+                You can also download your favourite shows with the iOS
+                or Android app and watch them without an internet connection.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Question 4 -->
+    <div class="item">
+
+        <div class="que">
+            <span>How do I cancel?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                Netflix is flexible. You can easily cancel your account
+                online in a few clicks. There are no cancellation fees.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Question 5 -->
+    <div class="item">
+
+        <div class="que">
+            <span>What can I watch on Netflix?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                Netflix has an extensive library of feature films,
+                documentaries, shows, anime, award-winning Netflix
+                originals, and more.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Question 6 -->
+    <div class="item">
+
+        <div class="que">
+            <span>Is Netflix good for kids?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="ans">
+            <p>
+                The Netflix Kids experience is included in your membership
+                to give parents control while kids enjoy family-friendly
+                TV shows and films in their own space.
+            </p>
+
+            <p>
+                Kids profiles come with PIN-protected parental controls
+                that let parents restrict the maturity rating of content
+                kids can watch.
+            </p>
+        </div>
+
+    </div>
+
+</section>
     <script src="script.js"></script>
 </body>
 </html>
