@@ -504,8 +504,10 @@ body {
 
 
 
+
 /* Question Section */
 
+
 #question {
     clear: both;
     width: 80%;
@@ -524,10 +526,6 @@ body {
 .que:hover{
     background-color:#4d4d4d;
 }
-/* ============================= */
-/* FAQ SECTION */
-/* ============================= */
-
 #question {
     clear: both;
     width: 80%;
@@ -544,109 +542,207 @@ body {
     padding-top: 30px;
     font-size: 28px;
 }
-
 .que:hover{
     background-color:#4d4d4d;
 }
-/* FAQ Heading */
-
 .question h2 {
     font-size: 32px;
     margin-bottom: 25px;
     font-weight: bold;
 }
-
-
-/* FAQ ITEM */
-
 .item {
     margin-bottom: 10px;
 }
-
-
-/* QUESTION */
-
 .que {
     background-color: #2d2d2d;
-
     min-height: 85px;
-
     padding: 0 30px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     cursor: pointer;
-
     font-size: 28px;
-
     transition: background-color 0.3s ease;
 }
-
-
-/* Hover */
-
 .que:hover {
     background-color: #414141;
 }
-
-
-/* PLUS / CLOSE ICON */
-
 .icon {
     font-size: 45px;
-
     font-weight: 200;
-
     line-height: 1;
-
     transition: transform 0.3s ease;
 }
-
-
-/* ANSWER */
-
 .ans {
     background-color: #2d2d2d;
-
     padding: 25px 30px;
-
     display: none;
-
     font-size: 24px;
-
     line-height: 1.5;
-
     border-top: 2px solid black;
 }
-
-
-/* Answer paragraphs */
-
 .ans p {
     margin-bottom: 30px;
 }
-
-
-/* Remove margin from last paragraph */
-
 .ans p:last-child {
     margin-bottom: 0;
 }
-
-
-/* ACTIVE FAQ */
-
 .item.active .ans {
     display: block;
 }
-
-
-/* Change + to × */
-
 .item.active .faq-icon {
     transform: rotate(45deg);
+}
+
+
+
+
+
+
+/* FOOTER */
+
+#footer {
+    background-color: #000;
+    color: #b3b3b3;
+    padding: 40px 10%;
+    min-height: 650px;
+    font-family: Arial, sans-serif;
+}
+.footer-top {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.footer-top h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.email-box input {
+    width: 600px;
+    height: 60px;
+    background-color: #111;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 0 18px;
+    color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.email-box input::placeholder {
+    color: #b3b3b3;
+}
+.get-started {
+    height: 60px;
+    width: 265px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.get-started span {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.get-started:hover {
+    background-color: #f40612;
+}
+.contact {
+    margin-bottom: 35px;
+}
+
+.contact p {
+    font-size: 16px;
+}
+
+.contact a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    margin-bottom: 60px;
+}
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.link-column a {
+    color: #b3b3b3;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.link-column a:hover {
+    color: white;
+}
+.option{
+    background-color: white;
+    color: black;
+}
+.option:hover{
+    background-color: white;
+    color: black;   
+}
+.language {
+    margin-bottom: 40px;
+}
+.language button {
+    background-color: #000;
+    color: black;
+    padding: 9px 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.netflix-india {
+    color: #b3b3b3;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.captcha {
+    color: #737373;
+    font-size: 13px;
+}
+@media (max-width: 800px) {
+
+    #footer {
+        padding: 40px 6%;
+    }
+    .email-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-box input {
+        width: 100%;
+    }
+    .get-started {
+        width: 200px;
+    }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+@media (max-width: 500px) {
+
+    .footer-top h3 {
+        font-size: 16px;
+    }
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .email-box input {
+        width: 100%;
+    }
 }
