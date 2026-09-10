@@ -175,8 +175,8 @@ body {
 }
 .movie-card {
     position: relative;
-    min-width: 150px;
-    height: 250px;
+    min-width: 230px;
+    height: 330px;
     border-radius: 10px;
     overflow: visible;
     flex-shrink: 0;
@@ -255,6 +255,148 @@ body {
         width: 35px;
         height: 100px;
         font-size: 20px;
+    }
+}
+
+/* ========================= */
+/* MOVIE POPUP */
+/* ========================= */
+
+.movie-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popup Box */
+.movie-popup {
+    width: 800px;
+    max-width: 90%;
+    background-color: #181818;
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+/* Movie Image */
+.movie-popup img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dark gradient on image */
+.movie-popup::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(
+        transparent,
+        #181818
+    );
+    pointer-events: none;
+}
+
+/* Movie Information */
+.movie-info {
+    padding: 20px 50px 40px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Movie Title */
+.movie-info h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Tags */
+
+.movie-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.movie-tags span {
+    background-color: #555;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Description */
+.movie-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+/* Get Started Button */
+.modal-start {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-start:hover {
+    background-color: #f40612;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 35px;
+}
+
+.close-btn:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .movie-popup img {
+        height: 250px;
+    }
+    .movie-info {
+        padding: 20px;
+    }
+    .movie-info h1 {
+        font-size: 30px;
+    }
+    .movie-info p {
+        font-size: 16px;
     }
 }
 
@@ -381,4 +523,130 @@ body {
 }
 .que:hover{
     background-color:#4d4d4d;
+}
+/* ============================= */
+/* FAQ SECTION */
+/* ============================= */
+
+#question {
+    clear: both;
+    width: 80%;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.que{
+    background-color: #333333;
+    height: 55px;
+    width: 96.5%;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 28px;
+}
+
+.que:hover{
+    background-color:#4d4d4d;
+}
+/* FAQ Heading */
+
+.question h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+/* FAQ ITEM */
+
+.item {
+    margin-bottom: 10px;
+}
+
+
+/* QUESTION */
+
+.que {
+    background-color: #2d2d2d;
+
+    min-height: 85px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    font-size: 28px;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover */
+
+.que:hover {
+    background-color: #414141;
+}
+
+
+/* PLUS / CLOSE ICON */
+
+.icon {
+    font-size: 45px;
+
+    font-weight: 200;
+
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ANSWER */
+
+.ans {
+    background-color: #2d2d2d;
+
+    padding: 25px 30px;
+
+    display: none;
+
+    font-size: 24px;
+
+    line-height: 1.5;
+
+    border-top: 2px solid black;
+}
+
+
+/* Answer paragraphs */
+
+.ans p {
+    margin-bottom: 30px;
+}
+
+
+/* Remove margin from last paragraph */
+
+.ans p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ACTIVE FAQ */
+
+.item.active .ans {
+    display: block;
+}
+
+
+/* Change + to × */
+
+.item.active .faq-icon {
+    transform: rotate(45deg);
 }
