@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netflix Sign In</title>
+    <style>
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #ffffff;
+            background-color: #080000;
+
+            background-image:
+                radial-gradient(
+                circle at 16% 5%,
+                rgba(255, 255, 255, 0.10) 0%,
+                rgba(255, 190, 190, 0.05) 10%,
+                transparent 30%
+            ),
+            radial-gradient(
+                circle at 53% 23%,
+                rgba(172, 30, 30, 0.38) 0%,
+                rgba(115, 12, 12, 0.24) 24%,
+                transparent 58%
+            ),
+            radial-gradient(
+                circle at 92% 36%,
+                rgba(255, 255, 255, 0.06) 0%,
+                rgba(255, 70, 70, 0.08) 13%,
+                transparent 35%
+            ),
+            radial-gradient(
+                ellipse at 49% 45%,
+                rgba(85, 8, 8, 0.70) 0%,
+                rgba(35, 1, 1, 0.70) 48%,
+                transparent 78%
+            ),
+            linear-gradient(
+                to bottom,
+                #3b0707 0%,
+                #210202 37%,
+                #090000 72%,
+                #000000 100%
+            );
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        body::before,
+        body::after {
+          content: "";
+          position: fixed;
+          z-index: -1;
+          width: 420px;
+          height: 420px;
+          border-radius: 50%;
+          pointer-events: none;
+          filter: blur(100px);
+          opacity: 0.22;
+        }
+
+        body::before {
+          top: -170px;
+          left: -120px;
+          background: rgba(255, 230, 230, 0.5);
+        }
+
+        body::after {
+          top: 80px;
+          right: -210px;
+          background: rgba(255, 25, 25, 0.40);
+        }
+        header,
+        main {
+          position: relative;
+          z-index: 1;
+        }
+
+            header {
+              padding: 20px;
+              border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .logo {
+              color: #e50914;
+              font-size: 50px;
+              font-weight: bold;
+            }
+
+            main {
+              max-width: 400px;
+              margin: 50px auto;
+              text-align: left;
+            }
+
+            h1 {
+              font-size: 28px;
+              margin-bottom: 10px;
+            }
+
+            .subtitle {
+              color: #b3b3b3;
+              margin-bottom: 20px;
+            }
+
+            .input-box {
+              width: 100%;
+              padding: 15px;
+              margin-bottom: 15px;
+              background: #222;
+              border: 1px solid #555;
+              border-radius: 4px;
+              color: white;
+              font-size: 16px;
+            }
+
+            .continue-btn {
+              width: 100%;
+              padding: 15px;
+              background: #e50914;
+              border: none;
+              border-radius: 4px;
+              color: white;
+              font-size: 18px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+
+            .continue-btn:hover {
+              background: #f6121d;
+            }
+
+            .help {
+              margin-top: 30px;
+            }
+
+            .help a {
+              display: block;
+              color: white;
+              text-decoration: underline;
+              margin-bottom: 10px;
+            }
+
+            .help a:hover {
+              color: #b3b3b3;
+            }
+
+            .captcha-text {
+              margin-top: 20px;
+              color: #888;
+              font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">NETFLIX</div>
+        </header>
+
+        <main>
+            <h1>Enter your info to sign in</h1>
+            <p class="subtitle">Or get started with a new account.</p>
+
+            <form onsubmit="return handleSubmit()">
+              <input class="input-box" type="text" id="emailOrPhone" placeholder="Email or mobile number" required>
+              <button class="continue-btn" type="submit">Continue</button>
+            </form>
+
+            <div class="help">
+              <a href="#" onclick="alert('Demo: Account recovery page')">Forgot email or mobile number?</a>
+              <a href="#" onclick="alert('Demo: Info about signing in')">Learn more about sign-in</a>
+            </div>
+
+            <p class="captcha-text">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+        </main>
+
+          <script>
+            function handleSubmit() {
+              const value = document.getElementById("emailOrPhone").value.trim();
+              if (value === "") {
+                alert("Please enter your email or mobile number.");
+                return false;
+              }
+              alert("Demo page only. In a real site, the next step would open.");
+              return false; // prevent actual submit
+            }
+          </script>
+    </body>
+</html>
